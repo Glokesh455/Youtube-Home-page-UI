@@ -26,12 +26,12 @@
     ></script>
     <script src="./script.js" defer></script>
   </head>
-  <body>
-    <div class="navbar  d-flex justify-content-between">
-        <div class="btn-sidebar">
-            <div style="font-size:25px;cursor:pointer" onclick="openNav()" >&#9776;</div>
-        </div>
-        
+  <body class="bg-dark">
+    <div class="navbar d-flex justify-content-between">
+      <div class="btn-sidebar">
+     
+      </div>
+
       <div class="img">
         <img
           class="imglogo"
@@ -39,14 +39,16 @@
           alt=""
         />
       </div>
-        <div class="search d-flex ">
-        <input type="text" class="text px-3" placeholder="search"/><button class="searchbtn">
+      <div class="search d-flex">
+        <input type="text" class="text px-3 bg-dark" placeholder="search" /><button
+          class="searchbtn"
+        >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <div class="mic d-flex mx-2"><i class="m-auto fa-solid fa-microphone"></i></div>
-        
+        <div class="mic d-flex mx-2">
+          <i class="m-auto fa-solid fa-microphone"></i>
+        </div>
       </div>
-  
 
       <div class="navicon d-flex">
         <div class="s mx-4">
@@ -60,53 +62,84 @@
         <div class="icon mx-4">
           <a href=""><i class="fa-regular fa-bell"></i></a>
         </div>
-        <div class="icon mx-4">
-          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+        <div class="icon1 mx-4 ">
+          <a href="#"><i class="fa-solid fa-circle-user fa-xl"></i></a>
         </div>
-        
       </div>
     </div>
+    <div class="catigeory">
+      <ul class="catigeories">
+        <li>All</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <button class="btnmore"><i class="fa-solid fa-chevron-right"></i></button>
+     
 
-
-
-  
+      </ul>  
+    </div>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
-        <a href="#"> <i class="fa-sharp fa-regular fa-compass"></i> Explore</a>
-        <a href="#"><i class="fa-regular fa-bell"></i> Subscriptions</a>
-        <hr style="height: 3px; color: grey;">
-        <a href="#"><i class="fa-sharp fa-solid fa-book"></i> Library</a>
-        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
-        <a href="#"><i class="fa-brands fa-square-youtube"></i> Your videos</a>
-        <a href="#"><i class="fa-regular fa-clock"></i> Watch later</a>
-        <a href="#"><i class="fa-regular fa-thumbs-up"></i> Liked videos</a>
-        <a href="#"><i class="fa-solid fa-angle-right fa-rotate-90"></i> Show more</a>
-        <hr style="height: 3px; color: grey;">
-        <b class="ps-4 text-secondary">SUBSCRIPTIONS</b>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
-        <a href="#"><i class="fa-solid fa-angle-right fa-rotate-90"></i> Show 13 more</a>
-        <hr style="height: 3px; color: grey;">
-        <b class="ps-4 text-secondary">More from Youtube</b>
-        <a href="#"><i class="fa-brands fa-square-youtube"></i> Youtube premium </a>
-        <a href="#"><i class="fa-solid fa-gamepad"></i> Gaming</a>
    
-        <div class="livelogo">
-            <a href="#">
-                <i class="fa-solid fa-wifi fa-rotate-270"></i>
-                <i class="s2 fa-solid fa-wifi fa-rotate-90"></i>
-                 Live</a>
-        </div>
-       
+      <a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
+      <a href="#"> <i class="fa-sharp fa-regular fa-compass"></i> Explore</a>
+      <a href="#"><i class="fa-regular fa-bell"></i> Subscriptions</a>
+      <hr style="height: 3px; color: grey" />
+      <a href="#"><i class="fa-sharp fa-solid fa-book"></i> Library</a>
+      <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+      <a href="#"><i class="fa-brands fa-square-youtube"></i> Your videos</a>
+      <a href="#"><i class="fa-regular fa-clock"></i> Watch later</a>
+      <a href="#"><i class="fa-regular fa-thumbs-up"></i> Liked videos</a>
+      <a href="#"
+        ><i class="fa-solid fa-angle-right fa-rotate-90"></i> Show more</a
+      >
+      <hr style="height: 3px; color: grey" />
+      <b class="ps-4 text-secondary">SUBSCRIPTIONS</b>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> Alan Cooper</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i> James Gouse</a>
+      <a href="#"
+        ><i class="fa-solid fa-angle-right fa-rotate-90"></i> Show 13 more</a
+      >
+      <hr style="height: 3px; color: grey" />
+      <b class="ps-4 text-secondary">More from Youtube</b>
+      <a href="#"
+        ><i class="fa-brands fa-square-youtube"></i> Youtube premium
+      </a>
+      <a href="#"><i class="fa-solid fa-gamepad"></i> Gaming</a>
+
+      <div class="livelogo">
+        <a href="#">
+          <i class="fa-solid fa-wifi fa-rotate-270"></i>
+          <i class="s2 fa-solid fa-wifi fa-rotate-90"></i>
+          Live</a
+        >
       </div>
+    </div>
+     
+
+
+    <div class="videos">
+
+      
+    </div>
+   
       
   </body>
 </html>

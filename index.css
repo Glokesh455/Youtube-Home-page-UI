@@ -1,125 +1,223 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 
-.navbar{
-    height: 40px;
-    width: 100vw;
-    position: relative;
+.navbar {
+  height: 40px;
+  z-index: 999;
+  position: relative;
+  background-color: #303030;
+}
+.imglogo {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 50px;
+}
+.btn-sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  color: white;
+}
+.text {
+  width: 300px;
+  height: 30px;
+  border: 1px solid#4E4E4E;
+}
+.mic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+}
+.search {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.searchbtn {
+  height: 30px;
+  width: 50px;
+  background-color: #4e4e4e;
+  border: 1px solid#4E4E4E;
+}
+i {
+  color: #fff;
+}
+.s {
+  display: flex;
+  flex-direction: column;
+}
+.s1 {
+  transform: translate(0, -60%);
+}
+.btnmore{
+  width: 40px;
+  height: 40px;
+  background-color: #303030;
+  border: 1px solid black;
+}
+
+.catigeories{
+  border: 1px solid black;
+ color: white;
+ list-style-type: none;
+ margin-left: 240px;
+ background-color: #303030;
+ height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
  
-    background-color: #303030;
 
-
-}
-.imglogo{
-    width: 100px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 10px;
-    left: 50px;
-  
-}
-.btn-sidebar{
-    position: absolute;
-    top: 0;
-    bottom: 10px;
-    color: white;
 
 
 }
-.text{
-    
-    width: 300px;
-    height: 30px;
-    border: 1px solid#4E4E4E;
-
-   
-  
-
+.catigeories li{
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
 }
-.mic{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: black;
-    
-    
-
-}
-.search{
- position: absolute;
- left:50%;
- transform: translate(-50%);
+.catigeories li:hover{
+  background-color: #fff;
+  color: black;
 }
 
-.searchbtn{
-    height: 30px;
-     width: 50px;
-    background-color:#4E4E4E;
-    border: 1px solid#4E4E4E;
 
 
-}
-i{
-    color: #fff;
-}
-.s{
-    display: flex;
-   flex-direction: column;
-}
-.s1{
-    transform: translate(0 ,-60%);
-}
+
+
+
+
+
+
+
+
+
+
 .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 40px;
-    left: 0;
-    background-color: #212121;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    overflow-y: scroll;
-  }
-
-  .sidenav::-webkit-scrollbar {
-    display: none;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0px;
+  left: 0;
+  background-color:#303030;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: scroll;
 }
 
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+img {
+  opacity: 0.7;
+}
+.s2 {
+  margin-left: -15px;
+}
+.videos{
+  margin-left: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+
+}
+.imgvideo{
+  width: 300px;
+  height: 169px;
+
+}
+.channellogo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+.discription{
+  color: white;
+}
+.part1{
+  width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+}
+h6{
+  color: gray;
+}
+@media only screen and (max-width: 600px) {
+	.sidenav{
+    display: none;
+  }
+  .videos{
+    margin-left: 0;
+  
+  }
+  .catigeory{
+    display: none;
+  }
+  .part1,.imgvideo{
+    width: 100%;
+   
+   
+  }
+  .navicon .s{
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  .icon1{
+    position: relative;
+    left: 14px;
+    top: -1px
   }
 
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .text{
+    width: 160px;
   }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  .imglogo{
+    display: none;
   }
-  img{
-    opacity: 0.7;
-  }
-  .s2{
-    
-    margin-left: -15px;
+  
 
-  }
+  
 
-
+}
+@media (min-width:600px)  { 
+  
+}
