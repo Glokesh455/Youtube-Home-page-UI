@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+ 
 }
-
+body{
+  
+}
 
 .navbar {
   height: 40px;
@@ -66,6 +68,7 @@ i {
   border: 1px solid black;
 }
 
+
 .catigeories{
   border: 1px solid black;
  color: white;
@@ -73,6 +76,7 @@ i {
  margin-left: 240px;
  background-color: #303030;
  height: 40px;
+ 
  display: flex;
  align-items: center;
  justify-content:space-between;
@@ -179,6 +183,13 @@ img {
 h6{
   color: gray;
 }
+.gap{
+  height: 40px;
+  width: 100vw;
+
+  background-color: rgb(11, 11, 11);
+
+}
 @media only screen and (max-width: 600px) {
 	.sidenav{
     display: none;
@@ -195,6 +206,7 @@ h6{
    
    
   }
+ 
   .navicon .s{
     display: none;
   }
@@ -217,7 +229,4 @@ h6{
 
   
 
-}
-@media (min-width:600px)  { 
-  
 }
